@@ -1,23 +1,94 @@
-<nav class="topnav">
-  <a href="https://leksystem.no">LEK-Systemet</a>
-  <a href="https://reddenbie.no">Redd en bie</a>
-  <a href="https://biehelse.no">Biehelse</a>
-  <a href="https://lekbien.no">App</a>
-</nav>
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEK-Systemet™</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEK-Systemet™</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0b0f14;
-            color: #ffffff;
-            a {
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f14;
+    color: #ffffff;
+}
+
+/* TOPPMENY */
+nav {
+    width: 100%;
+    background: #0b1f2a;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #f59e0b;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1c2b3a, #2f4f6f);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #f59e0b;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTENT */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: #111826;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
     color: #f59e0b;
     text-decoration: none;
     font-weight: bold;
@@ -26,160 +97,108 @@
 a:hover {
     text-decoration: underline;
 }
-        }
 
-        .header {
-            background: linear-gradient(135deg, #1c2b3a, #2f4f6f);
-            padding: 60px 20px;
-            text-align: center;
-        }
+/* FOOTER */
+footer {
+    width: 100%;
+    background: linear-gradient(135deg, #0b1f2a, #123b3a);
+    color: #ccc;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+    font-size: 14px;
+}
 
-        .header h1 {
-            font-size: 42px;
-            margin: 0;
-        }
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-        .header p {
-            font-size: 18px;
-            margin-top: 10px;
-            opacity: 0.9;
-        }
+footer a:hover {
+    color: #f59e0b;
+}
+</style>
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .card {
-            background: #111826;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
-        }
-
-        .card h2 {
-            margin-top: 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px;
-            opacity: 0.6;
-            font-size: 14px;
-        }
-
-        .cta {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
-            background: #f59e0b;
-            color: black;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="header">
-        <h1>LEK-Systemet™</h1>
-        <p>Struktur. Inntekt. Utvikling.</p>
-        <a href="#" class="cta">Kommer snart</a>
+<!-- TOPPMENY -->
+<nav>
+    <a href="https://leksystem.no">LEK-Systemet</a>
+    <a href="https://reddenbie.no">Redd en bie</a>
+    <a href="https://biehelse.no">Biehelse</a>
+    <a href="https://lekbien.no">App</a>
+</nav>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>LEK-Systemet™</h1>
+    <p>Struktur. Inntekt. Utvikling.</p>
+    <a href="#" class="cta">Kommer snart</a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="card">
+        <h2>Hva er LEK-Systemet?</h2>
+        <p>LEK-Systemet™ er et helhetlig system for struktur, inntekt og utvikling.</p>
+        <p>Ved å kombinere teknologi, kunstig intelligens og praktisk arbeid,
+        skaper vi en plattform som gjør det enklere å lykkes – både for enkeltpersoner og organisasjoner.</p>
     </div>
 
-    <div class="container">
-
-        <div class="card">
-            <h2>Hva er LEK-Systemet?</h2>
-            <p>
-                LEK-Systemet™ er et helhetlig system for struktur, inntekt og utvikling.
-            </p>
-            <p>
-                Ved å kombinere teknologi, kunstig intelligens og praktisk arbeid,
-                skaper vi en plattform som gjør det enklere å lykkes – både for enkeltpersoner og organisasjoner.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Hvordan fungerer det?</h2>
-            <p>
-                Systemet bruker strukturert oppgavehåndtering, automatisering og AI (Aurora)
-                for å gi full oversikt og kontroll.
-            </p>
-            <ul>
-                <li>📋 Oppgaver og struktur</li>
-                <li>🤖 AI-assistanse og analyse</li>
-                <li>⚙️ Automatisering av arbeid</li>
-                <li>📈 Bedre beslutninger og effektivitet</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Hva består systemet av?</h2>
-            <p>
-                LEK-Systemet™ er et økosystem med flere løsninger:
-            </p>
-            <ul>
-    <li>
-        🐝 <a href="https://lekbie.no">LEK-Biens Vokter™</a>
-    </li>
-    <li>
-        🍯 <a href="https://reddenbie.no">Redd en bie</a>
-    </li>
-    <li>
-        🌍 Fremtidige prosjekter og tjenester
-    </li>
-</ul>
-
-        <div class="card">
-            <h2>Hvorfor er dette viktig?</h2>
-            <p>
-                Mange mangler struktur i arbeid og drift.
-            </p>
-            <p>
-                LEK-Systemet™ gjør det mulig å jobbe smartere,
-                redusere feil og øke lønnsomhet – ved hjelp av teknologi og AI.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Fremtiden</h2>
-            <p>
-                Systemet er bygget for en fremtid der kunstig intelligens styrer og optimaliserer drift.
-            </p>
-            <p>
-                Målet er et selvkjørende system hvor mennesker får mer frihet,
-                samtidig som resultater og effektivitet øker.
-            </p>
-        </div>
-
+    <div class="card">
+        <h2>Hvordan fungerer det?</h2>
+        <p>Systemet bruker strukturert oppgavehåndtering, automatisering og AI (Aurora)
+        for å gi full oversikt og kontroll.</p>
+        <ul>
+            <li>📋 Oppgaver og struktur</li>
+            <li>🤖 AI-assistanse og analyse</li>
+            <li>⚙️ Automatisering av arbeid</li>
+            <li>📈 Bedre beslutninger og effektivitet</li>
+        </ul>
     </div>
-<footer style="
-  background:#0b1f2a;
-  color:#aaa;
-  text-align:center;
-  padding:30px 20px;
-  font-size:14px;
-">
 
-  <div style="margin-bottom:10px;">
-    <a href="https://leksystem.no" style="color:#ccc; margin:0 10px; text-decoration:none;">LEK-Systemet</a>
-    |
-    <a href="https://reddenbie.no" style="color:#ccc; margin:0 10px; text-decoration:none;">Redd en bie</a>
-    |
-    <a href="https://biehelse.no" style="color:#ccc; margin:0 10px; text-decoration:none;">Biehelse</a>
-  </div>
+    <div class="card">
+        <h2>Hva består systemet av?</h2>
+        <p>LEK-Systemet™ er et økosystem med flere løsninger:</p>
+        <ul>
+            <li>🐝 <a href="https://lekbie.no">LEK-Biens Vokter™</a></li>
+            <li>🍯 <a href="https://reddenbie.no">Redd en bie</a></li>
+            <li>🌍 Fremtidige prosjekter og tjenester</li>
+        </ul>
+    </div>
 
-  <div style="margin-top:10px;">
-    © 2026 <a href="https://aiinnovate.no" style="color:#ccc; text-decoration:none;">AI Innovate AS</a>
-  </div>
+    <div class="card">
+        <h2>Hvorfor er dette viktig?</h2>
+        <p>Mange mangler struktur i arbeid og drift.</p>
+        <p>LEK-Systemet™ gjør det mulig å jobbe smartere,
+        redusere feil og øke lønnsomhet – ved hjelp av teknologi og AI.</p>
+    </div>
 
+    <div class="card">
+        <h2>Fremtiden</h2>
+        <p>Systemet er bygget for en fremtid der kunstig intelligens styrer og optimaliserer drift.</p>
+        <p>Målet er et selvkjørende system hvor mennesker får mer frihet,
+        samtidig som resultater og effektivitet øker.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        <a href="https://leksystem.no">LEK-Systemet</a> |
+        <a href="https://reddenbie.no">Redd en bie</a> |
+        <a href="https://biehelse.no">Biehelse</a>
+    </div>
+
+    <div style="margin-top:10px;">
+        © 2026 <a href="https://aiinnovate.no">AI Innovate AS</a>
+    </div>
 </footer>
+
+</body>
+</html>
