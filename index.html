@@ -13,18 +13,36 @@ body {
     color: #ffffff;
 }
 
-/* TOPPMENY */
+/* NAVBAR */
 nav {
     width: 100%;
     background: #0b1f2a;
-    padding: 15px 20px;
-    text-align: center;
+    padding: 12px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav a {
+/* LOGO I NAV */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    width: 40px;
+}
+
+.nav-left span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a {
     color: #ccc;
     margin: 0 15px;
     text-decoration: none;
@@ -32,15 +50,21 @@ nav a {
     transition: 0.2s;
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: #f59e0b;
 }
 
 /* HEADER */
 .header {
     background: linear-gradient(135deg, #1c2b3a, #2f4f6f);
-    padding: 80px 20px;
+    padding: 100px 20px 80px;
     text-align: center;
+}
+
+/* STOR LOGO */
+.hero-logo {
+    width: 120px;
+    margin-bottom: 20px;
 }
 
 .header h1 {
@@ -52,17 +76,6 @@ nav a:hover {
     font-size: 18px;
     margin-top: 10px;
     opacity: 0.9;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: #f59e0b;
-    color: black;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* CONTENT */
@@ -78,6 +91,11 @@ nav a:hover {
     padding: 25px;
     margin-bottom: 25px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
 }
 
 .card h2 {
@@ -124,15 +142,23 @@ footer a:hover {
 
 <body>
 
-<!-- TOPPMENY -->
+<!-- NAVBAR -->
 <nav>
-    <a href="https://leksystem.no">LEK-Systemet</a>
-    <a href="https://reddenbie.no">Redd en bie</a>
-    <a href="https://biehelse.no">Biehelse</a>
+    <div class="nav-left">
+        <img src="lek-logo.png">
+        <span>LEK-Systemet™</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="https://leksystem.no">LEK-Systemet</a>
+        <a href="https://reddenbie.no">Redd en bie</a>
+        <a href="https://biehelse.no">Biehelse</a>
+    </div>
 </nav>
 
 <!-- HEADER -->
 <div class="header">
+    <img src="lek-logo.png" class="hero-logo">
     <h1>LEK-Systemet™</h1>
     <p>Struktur. Inntekt. Utvikling.</p>
 </div>
